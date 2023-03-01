@@ -1,0 +1,182 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  body
+    margin: 0 auto
+    padding: 0px 10px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .header
+    &__main
+      background-image: none
+    &__icons 
+      input
+        top: 20px
+        &:focus
+          width: 150px
+    &__watch 
+      .top-price, .bottom-text
+        display: none
+      img
+        margin-right: 10%
+        max-width: 70%
+    &__text
+      padding-left: 10%
+      .text-header
+        &::before
+          display: none
+
+  .product
+    &__link
+      &::before
+        display: none
+
+  .slider
+    &__imageBlock
+      height: 450px
+    &__img 
+      width: 120%
+
+  .info
+    &__images
+      .images__parent
+        display: none
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .menu
+    &__list
+      display: none
+  
+  .header
+    margin-bottom: 50px
+    &__icons 
+      input
+        top: 0
+    &__text
+      .text-header
+        font-size: 32px
+        line-height: 48px
+      .text-subheader
+        font-size: 24px
+        margin-bottom: 28px
+      .text-description
+        font-size: 12px
+        margin-bottom: 48px
+
+  .popular
+    margin-bottom: 30px
+    &__header
+      margin-bottom: 30px
+      font-size: 24px
+    &__link
+      text-align: center
+      &::after
+        display: none
+    &__items
+      justify-content: space-evenly
+    &__item
+      max-width: 50%
+      text-align: center
+
+  .slider
+    margin-bottom: 60px
+    &__imageBlock
+      display: none
+    &__textBlock
+      width: 100%
+      max-width: 100%
+      padding: 0 5%
+      justify-content: center
+    &__text
+      max-width: 100%
+      text-align: center
+    &__header
+      font-size: 24px
+      margin-bottom: 28px
+    &__desc
+      font-size: 12px
+
+  .info
+    margin-bottom: 60px
+    justify-content: center
+    &__text
+      margin-right: 0
+      max-width: 100%
+      text-align: center
+    &__header
+      font-size: 24px
+    &__desc
+      font-size: 12px
+      margin: 0 auto 80px
+      max-width: 460px
+    &__images
+      display: none
+
+  footer
+    .footer
+      padding: 30px 5%
+      flex-direction: column
+      &__header
+        margin: 25px 0 15px 0
+        font-size: 12px
+        text-align: center
+        text-decoration: underline
+      ul
+        text-align: center
+        margin: 18px
+    
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .header
+    &__icons 
+      input
+        top: 20px
+    &__watch
+      display: none
+    &__main
+      justify-content: center
+
+  .popular
+    &__items
+      justify-content: center
+    &__item
+      max-width: 100%
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	
+
